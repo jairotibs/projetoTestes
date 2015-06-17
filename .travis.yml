@@ -11,9 +11,7 @@ jdk: oraclejdk7
 notifications:
  email: false
 
-before_install:
- - sudo apt-get update -qq
+-before_install:
+- sudo apt-get install -qq --force-yes libgd2-xpm ia32-libs ia32-libs-multiarch
 
-script:
- - ./gradlew clean build
  
